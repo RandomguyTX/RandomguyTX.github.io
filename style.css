@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-image: url(images/violinbackground.jpg);
+    font-family: Dancing Script;
+}
+
+header {
+    height: 10%;
+    background-color: rgb(179, 118, 39);
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+footer {
+    font-size: 0.8rem;
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    margin: 0;
+    position: relative;
+}
+
+
+.element {
+    border: solid black;
+    border-radius: 20px;
+    margin: 40px;
+    position: relative;
+}
+
+@media only screen and (max-width: 767px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+    
+.overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition: 0.5s;
+    border: 2px black;
+    border-radius: 20px;
+}
+
+.overlay:hover {
+    opacity: 1;
+}
+
+#Viool1 {
+    background-image: url(images/doubleviolin.jpg);
+    background-size: cover;
+    height: 500px;
+    width: 150px;
+    min-width: 150px;
+    min-height: 500px;
+    
+} 
+
+#Viool2 {
+    background-image: url(images/banjoviolin.jpg);
+    background-size: cover;
+    height: 550px;
+    width: 140px;
+    min-width: 140px;
+    min-height: 550px;
+}
+
+#Viool3 {
+    background-image: url(images/phonoviolin.jpg);
+    background-size: cover;
+    height: 550px;
+    width: 150px;
+    min-width: 150px;
+    min-height: 550px;
+}
+
+#Viool4 {
+    background-image: url(images/StrohVilin.jpg);
+    background-size: cover;
+    height: 450px;
+    width: 200px;
+    min-width: 200px;
+    min-height: 450px;
+}
+
+#Viool5 {
+    background-image: url(images/trapeziumviolin.jpg);
+    background-size: cover;
+    height: 500px;
+    width: 190px;
+    min-width: 190px;
+    min-height: 500px;
+}
+
+#Viool6 {
+    background-image: url(images/weirdviolin.jpg);
+    background-size: cover;
+    height: 450px;
+    width: 200px;
+    min-width: 200px;
+    min-height: 450px;
+}
